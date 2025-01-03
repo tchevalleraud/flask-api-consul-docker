@@ -2,6 +2,8 @@ FROM ubuntu:22.04
 
 ENV PYTHONUNBUFFERED=1 LC_ALL=C.UTF-8 LANG=C.UTF-8 FLASK_APP=app.py
 
+EXPOSE 5000
+
 RUN apt update && \
     apt install -y python3 python3-distutils unzip wget
 

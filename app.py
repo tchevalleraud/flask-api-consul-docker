@@ -6,7 +6,7 @@ from flask import jsonify
 
 app = Flask(__name__)
 
-@app.route("/hostname")
+@app.route("/")
 def hostname():
    return jsonify({"hostname": socket.gethostname()})
 
